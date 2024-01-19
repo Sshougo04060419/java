@@ -1,7 +1,7 @@
-package for文;
+package while文;
 
-class F_g {
+public class G_a {
     public static void main(String[] args) {
-
+        
     }
-    }
+}

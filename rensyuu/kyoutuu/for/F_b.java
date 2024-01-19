@@ -1,4 +1,4 @@
-package for文;
+package kyoutuu.for;
 
 class F_b {
     public static void main(String[] args) {
