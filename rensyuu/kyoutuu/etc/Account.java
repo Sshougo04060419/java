@@ -1,4 +1,4 @@
-package その他;
+package etc;
 
 public class Account {
     private String name;

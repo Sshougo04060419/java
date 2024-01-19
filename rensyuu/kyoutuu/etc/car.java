@@ -1,4 +1,4 @@
-package その他;
+package etc;
 
 class car {
     String brand;
