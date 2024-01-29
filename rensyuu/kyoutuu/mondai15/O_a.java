@@ -9,7 +9,7 @@ class O_a {
         System.out.print("整数1=");int x = nyuuryoku.nextInt();
         System.out.print("整数2=");int y = nyuuryoku.nextInt();
 
-            try {
+        try {
                 System.out.println(x+"/"+y+"="+x/y);
             }   catch (ArithmeticException e) {
                 System.out.println("0による割り算です!!" );
