@@ -1,7 +1,7 @@
-package 効果測定テスト用.効果測定2提出課題;
+package java3回目提出課題;
 
-class ElectronicsManufacturer {
-    public static String getSonyDescription() {
+class CarManu_nissan {
+    public static String getNissanDescription() {
         return "ソニーは電子機器メーカーで、テレビや音響機器を製造しています。";
     }
 
