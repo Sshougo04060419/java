@@ -1,4 +1,4 @@
-package Java_3rd_Submission_Assignment;
+package kouka3;
 // import java.util.Scanner;
 
 
@@ -114,15 +114,20 @@ package Java_3rd_Submission_Assignment;
 // }
 
 
+
+
+
+//入力
 import java.util.Scanner;
 
+//メインの処理を行うクラス
 class MainProcessing {
     public static void main(String[] args) {
         // ユーザーにメーカー名の入力を促す
         Scanner scanner = new Scanner(System.in);
-
+        //例外処理
         try {
-            System.out.print("国産車メーカー名を英語で入力してください: ");
+            System.out.print("国産車メーカー名を小文字で入力してください: ");
             String userInput = scanner.nextLine().toLowerCase();
 
             // 入力されたメーカー名に応じて説明文を表示
@@ -130,12 +135,15 @@ class MainProcessing {
             System.out.println(description);
 
         } catch (Exception e) {
+            // 例外が発生した場合のエラーメッセージを表示
             System.out.println("エラー: " + e.getMessage());
         } finally {
+             // Scannerをクローズ
             scanner.close();
         }
     }
 
+    // メーカー名に対応する説明を取得するメソッド
     private static String getDescription(String userInput) {
         switch (userInput) {
             case "toyota":
@@ -145,21 +153,29 @@ class MainProcessing {
             case "nissan":
                 return new CarManuNissan().getDescription();
             case "mazda":
+            case "matuda":
+            case "matsuda":
                 return new CarManuMazda().getDescription();
             case "suzuki":
-                return CarManuSuzuki.getDescription();
+                return new CarManuSuzuki().getDescription();
             case "daihatsu":
-                return CarManuDaihatsu.getDescription();
+            case "daihatu":
+                return new CarManuDaihatsu().getDescription();
             case "mitsubishi":
-                return CarManuMitsubishi.getDescription();
+            case "mitubishi":
+            case "mitsubisi":
+            case "mitubisi":
+                return new CarManuMitsubishi().getDescription();
             case "subaru":
-                return CarManuSubaru.getDescription();
+                return new CarManuSubaru().getDescription();
             case "lexus":
-                return CarManuLexuas.getDescription();
+                return new CarManuLexus().getDescription();
             case "mitsuoka":
-                return CarManuMitsuoka.getDescription();
+            case "mituoka":
+                return new CarManuMitsuoka().getDescription();
             case "isuzu":
-                return CarManuIsuzu.getDescription();
+                return new CarManuIsuzu().getDescription();
+                //userInput がどの車メーカーにも一致しない場合、default ブロック内のコードが実行
             default:
                 throw new IllegalArgumentException("対応するメーカーがないか、正しく入力されていません。");
         }

@@ -1,6 +1,8 @@
-package Java_3rd_Submission_Assignment;
+package kouka3;
 
+// メーカーの基底クラス
 class CarManufacturer {
+    // デフォルトのメーカー説明を返すメソッド
     public String getDescription() {
         return "デフォルトのメーカー説明";
     }

@@ -1,4 +1,4 @@
-package Java_3rd_Submission_Assignment;
+package kouka3;
 
 // public class CarManu_mazda {
 //     public static String getmazdaDescription() {
@@ -6,11 +6,11 @@ package Java_3rd_Submission_Assignment;
 //     }
 // }
 
-
+// マツダのメーカークラス
 class CarManuMazda extends CarManufacturer{
     @Override
     public String getDescription() {
-        return "「マツダといえばデザイン」と言われるほど、その意匠性には定評があります。\r\n"+"まるで外車のような洗練されたデザインが特徴的で、評価の高いメーカーと言えるでしょう。\r\n" +"またマツダは他社がハイブリッドに注力するなか、軽油を燃料に走るエコカー「クリーンディーゼル車」の開発に成功。\r\n" + "そもそもの燃料代を安く抑えるという発想は、車業界に旋風を巻き起こしました。\r\n" +"見た目も美しく、運転も楽しい車として人気のメーカーです。\r\n" +"\r\n\r\n------マツダの代表的な車-----\r\n" + "・MAZDA2・CX-30・CX-5・MAZDA3・CX-8・CX-3・MX-30・ロードスター・RX-7・RX-8などがある\r\n" ;
+        return "\r\n「マツダといえばデザイン」と言われるほど、その意匠性には定評があります。\r\n"+"まるで外車のような洗練されたデザインが特徴的で、評価の高いメーカーと言えるでしょう。\r\n" +"またマツダは他社がハイブリッドに注力するなか、軽油を燃料に走るエコカー「クリーンディーゼル車」の開発に成功。\r\n" + "そもそもの燃料代を安く抑えるという発想は、車業界に旋風を巻き起こしました。\r\n" +"見た目も美しく、運転も楽しい車として人気のメーカーです。\r\n" +"\r\n------マツダの代表的な車-----\r\n" + "・MAZDA2・CX-30・CX-5・MAZDA3・CX-8・CX-3・MX-30・ロードスター・RX-7・RX-8があります\r\n" ;
     }
 }
 
